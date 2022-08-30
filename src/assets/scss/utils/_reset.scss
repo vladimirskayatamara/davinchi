@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $mainFont;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+button:hover, 
+a:hover {
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: $wrapperWidth;
+}
+
+.big-wrapper {
+  max-width: $bigWrapperWidth;
+}
+
+section {
+  margin: 0 auto;
+
+  &:not(.progress, .gallery) {
+    max-width: $wrapperWidth;
+  }
+}
+
+main {
+  padding-top: 16px;
+}
+
+._title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 31px;
+  color: $mainFontColor;
+}
